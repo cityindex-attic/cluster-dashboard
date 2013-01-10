@@ -1,0 +1,305 @@
+//
+// MyBytes: Admin Content (Including Footer)
+// --------------------------------------------------
+
+body {
+  font-family: @sansFontFamily;
+}
+
+#wpbody-content:focus {
+  outline: 0;
+}
+
+#wpfooter {
+  display: none;
+}
+
+#screen-meta-links {
+  display: none; //TODO bring back the help tabs
+}
+
+#do_repost_form {
+  margin: 0;
+}
+
+.mybytes-admin {
+
+  #wpcontent {
+	margin-left: 65px;
+  }
+
+  .wrap {
+	margin: 0;
+  }
+
+  div[class*="mybytes-my-backups"],
+  div.mybytes-my-account {
+
+      .navbar {
+        .btn {margin-top: 0}
+      }
+
+      .navbar-static-top {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+      }
+
+      .navbar-inner {
+        min-height: 54px;
+        background: #fff;
+      }
+
+      .container {
+        margin: 0;
+      }
+  }
+
+  .available-modules {
+    display: none;
+  }
+
+  .mybytes-page-header {
+	.admin-menu-item-divider( bottom, solid, #e5e5e5, transparent );
+
+	h1 {
+	  font-size: @baseFontSize * 1.25;
+	  line-height: @baseLineHeight * 1.2;
+	  font-family: @headingsFontFamily;
+      float: left;
+      margin-right: 15px;
+      font-weight: normal;
+      color: #303030;
+
+      small {
+        margin-left: 5px;
+      }
+	}
+
+	.mybytes-page-description {
+	  font-size: 12px;
+	  font-family: arial;
+	  color: #555;
+	}
+  }
+
+  .mybytes-page-content {
+    padding-top: 75px;
+	margin: 0 0 0 20px;
+
+    .collapse {
+   	  background-color: #fafafa;
+      margin-left: -20px;
+      @shadow: inset 0 0 4px rgba(0,0,0,.075);
+      .box-shadow(@shadow);
+      border-bottom-color: #e5e5e5;
+      border-bottom-style: solid;
+      border-bottom-width: 0;
+   	}
+
+    .thumbnail {
+   	  .border-radius(0px);
+   	  h3 {
+   		margin: 0;
+   	  }
+   	}
+
+  }
+
+  .active-backups {
+	.row {
+	  margin-left: 0px;
+	  margin-bottom: 20px;
+	}
+
+    .new-backup {
+      background-color: #66FF99;
+    }
+
+	.thumbnails {
+	  margin: 0;
+	}
+
+	.active-backup {
+	  width: 205px;
+	  margin: 0 20px 20px 0;
+	}
+
+    .always-collapse {
+      height: 0;
+      overflow: hidden;
+
+    }
+
+    .backup-open {
+      border-top: 1px solid #e5e5e5;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .backup-open-active {
+      background-color: #f8f8f8;
+    }
+
+  }
+
+
+  #add-modules {
+
+//    max-height: 470px;
+//    overflow: scroll;
+
+    .container-fluid {
+      padding: 0 0 0 20px;
+    }
+
+    .module-settings > .service-settings {
+      float: right;
+      margin-left: -205px;
+    }
+
+    .service-info {
+       padding: 0;
+       width: 205px;
+       float: left;
+     }
+
+    .settings {
+      margin-left: 205px;
+
+      .span12 {
+        padding: 0 40px 0 20px;
+      }
+    }
+
+    legend {
+      font-size: 17px;
+      line-height: 32px;
+      margin: 0;
+    }
+
+    .module-select > .row-fluid {
+      float: right;
+      margin-left: -205px;
+
+      .span12 {
+        margin-left: 0;
+        max-height: 458px;
+        overflow: scroll;
+        padding: 20px 0 0 0;
+      }
+
+      [class*="span"] {
+        min-height: 126px;
+        min-width: 126px;
+      }
+    }
+
+    .search-filter-bar {
+      padding: 20px 0 0 0;
+      width: 205px;
+      float: left;
+    }
+
+    .thumbnail {
+      padding: 0;
+      position: relative;
+      min-height: 124px;
+      min-width: 124px;
+      line-height: 100px;
+
+      .holderjs-fluid {
+        font-size: 12px;
+      }
+    }
+
+    #module-search {
+      width: 193px;
+      border: 1px solid #d5d5d5;
+      .box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075));
+      margin: 0;
+      padding: 5px;
+    }
+
+    .nav-list {
+      padding: 0;
+
+      .nav-header {
+        margin: auto 0;
+        padding: 0 5px;
+      }
+
+      .divider {
+        margin: 9px 0;
+      }
+
+      .active > a {
+        background-color: transparent;
+        color: #006aeb;
+      }
+
+      li {
+        margin-bottom: 0;
+
+        a {
+          margin: 0;
+          padding: 3px 5px;
+        }
+      }
+    }
+
+    .module-display {
+      margin-left: 205px;
+
+      .thumbnails {
+        margin-bottom: 0;
+
+      }
+
+    }
+
+    .available-module {
+      margin-left: 20px;
+
+      .addbackup {
+        .border-radius(0);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+
+    .module-settings {
+      background-color: #fafafa;
+      width: 100%;
+      position: absolute;
+      display: none;
+      z-index: 9;
+
+      .close-settings {
+        background: #555;
+        border: 1px solid #333;
+        color: #fff;
+        margin: 5px 0 5px -15px;
+        padding: 0;
+        .border-radius(20px);
+        height: 16px;
+        width: 16px;
+        font-size: 12px;
+        line-height: 12px;
+        font-family: verdana;
+        font-weight: bold;
+
+      }
+
+      form {
+        padding: 0 5px;
+
+        .input-large {
+          padding: 15px 10px;
+        }
+      }
+    }
+
+  }
+}

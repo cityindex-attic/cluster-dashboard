@@ -1,0 +1,67 @@
+//
+// MyBytes: Admin Menu
+// --------------------------------------------------
+
+.mybytes-admin {
+
+  #adminmenuwrap {
+    width: 64px;
+    background: #f4f4f4;
+    z-index: 20;
+  }
+
+  #adminmenushadow {
+	display: none;
+  }
+
+  #adminmenu {
+    background: transparent;
+    border: 0;
+    position: fixed;
+    top: 57px;
+    .box-shadow(inset 0 0 5px rgba(213,213,213,0.50));
+
+    .wp-menu-arrow div {
+      border-color: transparent #fff transparent transparent;
+    }
+
+    li.menu-top {
+      border: 0;
+    }
+
+  }
+
+  #adminmenu div.wp-menu-image {
+	background-image: url(@iconMenuSpritePath);
+  }
+
+  #adminmenu .menu-icon-dashboard {
+	.icon-position-state ( 1 );
+  }
+
+  #adminmenu .toplevel_page_mybytes_my_backups {
+	.icon-position-state ( 2 );
+  }
+
+  #adminmenu .toplevel_page_mybytes_my_account {
+	.icon-position-state ( 4 );
+  }
+
+  .wp-submenu-head {
+	font-family: @headingsFontFamily;
+    display: none;
+  }
+
+  #adminmenu .wp-submenu {
+
+
+    a {
+      line-height: 24px;
+      padding: 15px 10px;
+    }
+
+  }
+
+
+}
+

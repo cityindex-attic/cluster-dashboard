@@ -1,0 +1,101 @@
+//
+// MyBytes: Admin Bar (Header)
+// --------------------------------------------------
+
+.mybytes-admin {
+
+  #wpadminbar {
+    .box-shadow(0 -1px 5px #888);
+  }
+
+  #wpadminbar .ab-top-menu .caret {
+	margin: 12px 0 0 5px;
+	.caret (#fff);
+  }
+
+  .dropdown-menu {
+    background: #303030;
+    .border-radius(4px);
+    .box-shadow(0 1px 8px rgba(0, 0, 0, 0.2));
+    min-width: 180px;
+    margin: 13px 0 0;
+    padding: 5px 0;
+
+    li > a {
+      color: #fff;
+      padding: 0 15px;
+    }
+
+    .icon-white {
+      margin: 0 5px 0 0;
+    }
+
+    .divider {
+      background-color: #222;
+      border-bottom: 1px solid #444;
+    }
+
+
+
+    ::after {
+      border-bottom: 6px solid #303030
+    }
+  }
+
+  .navbar .brand {
+	height: 32px;
+	padding: 12px 0;
+	line-height: 32px;
+	margin: 0;
+	font-family: @headingsFontFamily;
+	text-shadow: none;
+	color: #fff;
+	font-size: 26px;
+  }
+
+  .navbar .brand .logo {
+	background-image: url( @logoMainHeaderPath );
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	height: 32px;
+	width: 32px;
+	display: inline-block;
+	float: left;
+	margin: 0 15px 0 0;
+  }
+
+  #wp-admin-bar-mybytes-account > a {
+   	height: 26px;
+	padding: 14px 0;
+	line-height: 26px;
+	font-family: @headingsFontFamily;
+	font-weight: bold;
+
+    span {
+      font-weight: normal;
+    }
+
+    .avatar-28 {
+      .border-radius(14px);
+      .box-shadow(0 0 0px 2px #fff);
+      margin-right: 15px;
+
+    }
+  }
+
+  #wp-admin-bar-mybytes-account-actions::before {
+
+    border-bottom: 7px solid #222;
+    right: 14px;
+    top: -7px;
+
+  }
+
+  #wp-admin-bar-mybytes-account-actions::after {
+
+    border-bottom: 6px solid #303030;
+    top: -6px;
+    right: 15px;
+
+  }
+}

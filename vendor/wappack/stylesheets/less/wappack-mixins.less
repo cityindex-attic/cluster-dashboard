@@ -1,0 +1,39 @@
+// WAPACK Mixins
+// --------------------------
+
+.icon-position-state(@icon-pos: 1, @icon-base-height: 54px, @icon-base-width: 44px) {
+
+  @posx: (( @icon-pos * @icon-base-width ) - @icon-base-width ) * -1;
+
+  @posy: (( 1 * @icon-base-height ) - @icon-base-height ) * -1;
+
+  @posy-hover: (( 2 * @icon-base-height ) - @icon-base-height ) * -1;
+
+  div.wp-menu-image {
+	background-position: @posx @posy;
+	&:hover {
+	  background-position: @posx @posy-hover;
+	}
+  }
+
+  &.current div.wp-menu-image,
+  &.wp-has-current-submenu div.wp-menu-image {
+	background-position: @posx @posy-hover;
+  }
+
+}
+
+.admin-menu-item-divider(@pos, @style: solid, @cola: #000, @colb: #fff)when ( @pos = bottom ) {
+  border-bottom: 1px @style @cola;
+  .box-shadow ( 0 1px 0 @colb );
+}
+
+.admin-menu-item-divider(@pos, @style: solid, @cola: #000, @colb: #fff)when ( @pos = top ) {
+  border-top: 1px @style @cola;
+  .box-shadow ( 0 -1px 0 @colb );
+  &.wp-first-item {
+	border-top: none;
+	border-bottom: none;
+	.box-shadow ( none );
+  }
+}

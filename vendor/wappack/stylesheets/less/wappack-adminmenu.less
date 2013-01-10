@@ -1,0 +1,277 @@
+//
+// WAP Pack: Admin Menu
+// --------------------------------------------------
+
+.wappack-admin {
+
+  #adminmenuback {
+	padding: 0;
+	width: 279px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+  }
+
+  #adminmenu {
+	background: #fff;
+	width: 64px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-width: 0 1px 0 0;
+	border-style: solid;
+	border-color: #d5d5d5;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+  }
+
+  #adminmenuwrap {
+	position: fixed;
+	top: 58px;
+	bottom: 0;
+	border-width: 0 1px 0 0;
+	border-style: solid;
+	border-color: #d5d5d5;
+	width: 279px;
+	background: #ededed;
+  }
+
+// TODO could add arrow pointing to content area on the adminmenushadow div
+  #adminmenushadow {
+	position: absolute;
+	left: 269px;
+	top: 17px;
+	border-width: 10px 10px 10px 0;
+	border-style: solid;
+	border-color: transparent #d5d5d5 transparent transparent;
+  }
+
+  #adminmenushadow:after {
+	content: ' ';
+	position: absolute;
+	left: 2px;
+	top: -10px;
+	border-width: 10px 9px 10px 0;
+	border-style: solid;
+	border-color: transparent #fff transparent transparent;
+  }
+
+/* side admin menu */
+  #adminmenu * {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+  }
+
+  #adminmenu .wp-submenu,
+  #adminmenu .wp-submenu-wrap,
+  #adminmenu .wp-has-current-submenu .wp-submenu {
+	width: 194px;
+  }
+
+  #adminmenu .wp-submenu,
+  #adminmenu .wp-has-current-submenu .wp-submenu {
+	list-style: none;
+	padding: 0;
+	margin: 0 10px;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 65px;
+	overflow: hidden;
+  }
+
+  #adminmenu .wp-has-current-submenu .wp-submenu {
+	display: block;
+  }
+
+//    .no-js #adminmenu .wp-has-submenu:hover .wp-submenu,
+//    #adminmenu .wp-has-current-submenu .wp-submenu,
+//    #adminmenu li.focused .wp-submenu {
+//        display: none;
+//    }
+
+  #adminmenu li.focused.wp-not-current-submenu .wp-submenu,
+  #adminmenu li.focused.wp-has-current-submenu .wp-submenu,
+  .no-js #adminmenu .wp-has-submenu:hover .wp-submenu,
+  .no-js #adminmenu .wp-has-current-submenu:hover .wp-submenu {
+	padding: 0 8px 8px 0;
+  }
+
+  #adminmenu .wp-submenu-head {
+	font-family: @baseFontFamily;
+	font-size: @baseFontSize * 1.25;
+	line-height: @baseLineHeight * 1.2;
+	padding: 15px 10px;
+	.admin-menu-item-divider( bottom, solid, #d5d5d5, #f2f2f2 );
+  }
+
+  body.no-js #adminmenu .wp-menu-toggle,
+  #adminmenu div.wp-menu-toggle {
+	display: none;
+  }
+
+  #adminmenu div.wp-menu-image {
+	background-image: url(@iconMenuSpritePath);
+	float: left;
+	width: 44px;
+	height: 54px;
+  }
+
+  #adminmenu {
+	.menu-icon-dashboard { .icon-position-state ( 3 ) }
+	.menu-icon-post { .icon-position-state ( 11 ) }
+	.menu-icon-media { .icon-position-state ( 5 ) }
+	.menu-icon-links { .icon-position-state ( 4 ) }
+	.menu-icon-page { .icon-position-state ( 6 ) }
+	.menu-icon-comments { .icon-position-state ( 2 ) }
+	.menu-icon-appearance { .icon-position-state ( 1 ) }
+	.menu-icon-plugins { .icon-position-state ( 7 ) }
+	.menu-icon-users { .icon-position-state ( 10 ) }
+	.menu-icon-tools { .icon-position-state ( 8 ) }
+	.menu-icon-settings { .icon-position-state ( 9 ) }
+	.menu-icon-site { .icon-position-state ( 12 ) }
+  }
+
+  #adminmenu li {
+	margin: 0 10px;
+	padding: 0;
+	cursor: pointer;
+  }
+
+  #adminmenu a {
+	display: block;
+  }
+
+  #adminmenu a.menu-top { // this is for the menu in WP when not collapsed
+	display: none;
+  }
+
+  #adminmenu li.wp-menu-open { //        border-width: 0 0 1px;
+  //        border-style: solid;
+  }
+
+  #adminmenu .wp-submenu a,
+  #adminmenu li li a,
+  #adminmenu .wp-not-current-submenu li a {
+	padding: 10px 10px;
+	font-size: @baseFontSize;
+	line-height: @baseLineHeight;
+  }
+
+  #adminmenu .wp-menu-arrow {
+	display: none;
+  }
+
+  .wp-menu-arrow {
+	cursor: auto;
+	position: absolute;
+	margin: 17px 0 0 0;
+	border-color: transparent #d5d5d5 transparent transparent;
+	border-style: solid;
+	border-width: 10px;
+	height: 0;
+	width: 0;
+	right: 0;
+  }
+
+  #adminmenu .wp-menu-arrow div {
+	position: relative;
+	top: -10px;
+	width: 0;
+	height: 0;
+	right: 8px;
+	border-color: transparent #ededed transparent transparent;
+	border-style: solid;
+	border-width: 10px 9px 10px 10px;
+  }
+
+  #adminmenu li.wp-has-current-submenu .wp-menu-arrow,
+  #adminmenu li.current .wp-menu-arrow {
+	display: block;
+  }
+
+  #adminmenu .wp-submenu li {
+	padding: 0;
+	margin: 0;
+	.admin-menu-item-divider( top, dotted, #d5d5d5, transparent );
+  }
+
+  #adminmenu li.menu-top {
+	min-height: 54px;
+	.admin-menu-item-divider( top, solid, #dcdcdc, transparent );
+  }
+
+  #adminmenu .wp-menu-image img {
+	float: left;
+	padding: 5px 0 0 2px;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+  }
+
+  #adminmenu li.menu-top:hover .wp-menu-image img,
+  #adminmenu li.wp-has-current-submenu .wp-menu-image img {
+	opacity: 1;
+	filter: alpha(opacity=100);
+  }
+
+  #adminmenu li.wp-menu-separator {
+	height: 3px;
+	padding: 0;
+	margin: 0;
+	border-width: 1px 0;
+	border-style: solid;
+	cursor: inherit;
+  }
+
+  #adminmenu div.separator {
+	height: 1px;
+	padding: 0;
+	border-width: 1px 0 0 0;
+	border-style: solid;
+  }
+
+  #adminmenu li .wp-submenu-wrap {
+	position: relative;
+  }
+
+  #adminmenu li.wp-menu-open .wp-submenu-wrap { //        border: 0 none;
+  }
+
+  #adminmenu .wp-has-current-submenu.menu-top-last {
+	margin-bottom: 0;
+  }
+
+  #adminmenu .wp-submenu ul {
+	padding: 0;
+	margin: 0;
+  }
+
+  #adminmenu .wp-menu-toggle {
+	width: 18px;
+	clear: right;
+	float: right;
+	margin: 1px 0 0;
+	height: 27px;
+	padding: 1px 2px 0 0;
+	cursor: pointer;
+  }
+
+  #adminmenu .wp-menu-image a {
+	height: 54px;
+	width: 44px;
+  }
+
+  #adminmenu li span.count-0,
+  #sidemenu li a .count-0 {
+	display: none;
+  }
+
+  #collapse-menu {
+	display: none;
+  }
+
+}
+

@@ -1,0 +1,235 @@
+# Copyright (C) 2012 
+# This file is distributed under the same license as the  package.
+
+#: modules/audio-slideshow-widget.php:42
+msgid "Forsite Themes Extension Pack Audio slideshow widget"
+msgstr ""
+
+#: modules/audio-slideshow-widget.php:45
+msgid "FST - Audio Slideshow"
+msgstr ""
+
+#: modules/contact-widget.php:23
+msgid "A Schema.org compliant Contact widget"
+msgstr ""
+
+#: modules/contact-widget.php:26
+msgid "FST - Contact"
+msgstr ""
+
+#: modules/contact-widget.php:132
+msgid "Company Name"
+msgstr ""
+
+#: modules/contact-widget.php:137
+msgid "Address"
+msgstr ""
+
+#: modules/contact-widget.php:142
+msgid "Postal Code"
+msgstr ""
+
+#: modules/contact-widget.php:147
+msgid "City, Country"
+msgstr ""
+
+#: modules/contact-widget.php:152
+msgid "Phone"
+msgstr ""
+
+#: modules/contact-widget.php:157
+msgid "Email"
+msgstr ""
+
+#: modules/contact-widget.php:162
+msgid "Fax"
+msgstr ""
+
+#. translators: %s: title of menu item which is invalid
+#: modules/fst-menu-extensions/hookable-walker-nav-menu-edit.php:61
+msgid "%s (Invalid)"
+msgstr ""
+
+#. translators: %s: title of menu item in draft status
+#: modules/fst-menu-extensions/hookable-walker-nav-menu-edit.php:65
+msgid "%s (Pending)"
+msgstr ""
+
+#: modules/fst-menu-extensions/hookable-walker-nav-menu-edit.php:89
+msgid "Move up"
+msgstr ""
+
+#: modules/fst-menu-extensions/hookable-walker-nav-menu-edit.php:102
+msgid "Move down"
+msgstr ""
+
+#: modules/fst-menu-extensions/hookable-walker-nav-menu-edit.php:104
+#: modules/fst-menu-extensions/hookable-walker-nav-menu-edit.php:106
+msgid "Edit Menu Item"
+msgstr ""
+
+#: modules/fst-menu-extensions/hookable-walker-nav-menu-edit.php:115
+msgid "URL"
+msgstr ""
+
+#: modules/fst-menu-extensions/hookable-walker-nav-menu-edit.php:122
+msgid "Navigation Label"
+msgstr ""
+
+#: modules/fst-menu-extensions/hookable-walker-nav-menu-edit.php:128
+msgid "Title Attribute"
+msgstr ""
+
+#: modules/fst-menu-extensions/hookable-walker-nav-menu-edit.php:135
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: modules/fst-menu-extensions/hookable-walker-nav-menu-edit.php:140
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: modules/fst-menu-extensions/hookable-walker-nav-menu-edit.php:146
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: modules/fst-menu-extensions/hookable-walker-nav-menu-edit.php:152
+msgid "Description"
+msgstr ""
+
+#: modules/fst-menu-extensions/hookable-walker-nav-menu-edit.php:154
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr ""
+
+#: modules/fst-menu-extensions/hookable-walker-nav-menu-edit.php:163
+msgid "Original: %s"
+msgstr ""
+
+#: modules/fst-menu-extensions/hookable-walker-nav-menu-edit.php:176
+msgid "Remove"
+msgstr ""
+
+#: modules/fst-menu-extensions/hookable-walker-nav-menu-edit.php:177
+msgid "Cancel"
+msgstr ""
+
+#: modules/fst-menu-extensions.php:66
+msgid "FST Menu Extension widget area"
+msgstr ""
+
+#: modules/fst-menu-extensions.php:80
+msgid "FST Menu Extensions"
+msgstr ""
+
+#: modules/fst-menu-extensions.php:99
+msgid "Header"
+msgstr ""
+
+#: modules/fst-menu-extensions.php:100
+msgid "Header name"
+msgstr ""
+
+#: modules/fst-menu-extensions.php:110
+msgid "Divider"
+msgstr ""
+
+#: modules/fst-menu-extensions.php:119
+msgid "Widget area"
+msgstr ""
+
+#: modules/fst-menu-extensions.php:120
+msgid "Widget area name"
+msgstr ""
+
+#: modules/fst-menu-extensions.php:127
+msgid "Add to Menu"
+msgstr ""
+
+#: modules/fst-tabs-widget.php:40
+msgid "This is a Forsite Themes Extension Pack bundled tabs widget."
+msgstr ""
+
+#: modules/fst-tabs-widget.php:42
+msgid "FST - Tabs"
+msgstr ""
+
+#: modules/fst-tabs-widget.php:205
+msgid "Tabs"
+msgstr ""
+
+#: modules/fst-tabs-widget.php:219
+msgid "Title (optional):"
+msgstr ""
+
+#: modules/fst-tabs-widget.php:237
+msgid "Tab Position:"
+msgstr ""
+
+#: modules/fst-tabs-widget.php:239
+msgid "Above"
+msgstr ""
+
+#: modules/fst-tabs-widget.php:240
+msgid "Below"
+msgstr ""
+
+#: modules/fst-tabs-widget.php:241 modules/fst-tabs-widget.php:259
+msgid "Left"
+msgstr ""
+
+#: modules/fst-tabs-widget.php:242 modules/fst-tabs-widget.php:260
+msgid "Right"
+msgstr ""
+
+#: modules/fst-tabs-widget.php:247
+msgid "Limit:"
+msgstr ""
+
+#: modules/fst-tabs-widget.php:252
+msgid "Image Dimension:"
+msgstr ""
+
+#: modules/fst-tabs-widget.php:257
+msgid "Image Alignment:"
+msgstr ""
+
+#: modules/fst-tabs-widget.php:265
+msgid "fst_image() will be used to display thumbnails."
+msgstr ""
+
+#: modules/fst-tabs-widget.php:268
+msgid "The \"featured image\" will be used as thumbnails."
+msgstr ""
+
+#: modules/fst-tabs-widget.php:270
+msgid ""
+"Post thumbnails are not supported by your theme. Thumbnails will not be "
+"displayed."
+msgstr ""
+
+#: modules/fst-tabs-widget.php:289
+msgid " - None selected - "
+msgstr ""
+
+#: modules/fst-tabs-widget.php:402
+msgid "on"
+msgstr ""
+#Tab names
+msgid "latest"
+msgstr "Latest"
+msgid "comments"
+msgstr "Comments"
+msgid "tags"
+msgstr "Tags"
+msgid "popular"
+msgstr "Popular"
+
+#: modules/slideshow-widget.php:42
+msgid "Forsite Themes Extension Pack slideshow widget"
+msgstr ""
+
+#: modules/slideshow-widget.php:44
+msgid "FST - Slideshow"
+msgstr ""
+

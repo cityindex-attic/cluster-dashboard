@@ -1,0 +1,17 @@
+/* This stylesheet is used to style the admin option form of the widget. */
+
+.toplevel_page_mybytes_my_backups div.wp-menu-image {
+    background-image: url('../images/mybytes-icons.png');
+    background-position: -62px 15px;
+    background-repeat: none;
+}
+
+.toplevel_page_mybytes_my_backups div.wp-menu-image:hover {
+    background-position: -62px -33px;
+    background-repeat: none;
+}
+
+.wappack-admin #adminmenu li.wp-has-current-submenu, .wappack-admin #adminmenu li.current.menu-top {
+    border-bottom-color: #e5e5e5;
+    border-bottom-style: dotted;
+}
